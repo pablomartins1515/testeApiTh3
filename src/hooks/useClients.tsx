@@ -1,14 +1,10 @@
-import { ReactNode, createContext, useEffect, useState } from 'react';
+import { createContext, useEffect, useState } from 'react';
 import axios from 'axios';
 import { ClientsType } from '../@types';
 
 type ClientsProps = {
   clients: ClientsType[];
   setClients: (clients: ClientsType[]) => void;
-};
-
-type ClientsProviderProps = {
-  children?: ReactNode;
 };
 
 export const ClientsContext = createContext({} as ClientsProps);

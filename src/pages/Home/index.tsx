@@ -59,9 +59,9 @@ export function Home() {
                     <td key={item.id}>{item.firstname + ' ' + item.lastname}</td>                       
                     <td>{item.birthday}</td> 
 
-                    <td><button><CaretDown size={23} weight="bold" color='#808080' /></button></td> 
+                    <td><span><CaretDown size={23} weight="bold" color='#808080' /></span></td> 
 
-                    <td><button onClick={() => handleDeleteClick(item.id)}><Trash size={23} weight="fill" color='#808080'/></button></td>                    
+                    <td><span onClick={() => handleDeleteClick(item.id)}><Trash size={23} weight="fill" color='#808080'/></span></td>                    
                   </Disclosure.Button>
                   
                   <Disclosure.Panel > 

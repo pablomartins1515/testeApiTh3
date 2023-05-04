@@ -142,7 +142,7 @@ export const Table = styled.table`
     
   }
 
-  & > tbody> button > td > button {
+  & > tbody> button > td > span {
     max-width: 0.5rem;
     padding:  0 0 0 0;
     margin: 0 0 0 0;
@@ -152,7 +152,7 @@ export const Table = styled.table`
     outline: none;       
   }
 
-  & > tbody> button > td > button:hover > svg path {
+  & > tbody> button > td > span:hover > svg path {
     max-width: 0.5rem;
     border: none;   
     background-color: transparent; 
